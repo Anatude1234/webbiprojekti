@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,58 +6,92 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="assets/javascript/script.js"></script>
 </head>
-<body><h1>Mun harrastus</h1>
-    <p>Tällä sivulla kerron mun harrastuksesta!</p>  
-    <ul>
-    <button id="goToEnd">Sivun loppuun</button>
-    </ul>
-    <hr>
-    <article>
- 
+<body>
+    <div id="correct-answer" style="display: none;">
+        Oikea vastaus kysymykseen on: 109
+      </div>
+      <button id="show-answer">Show Answer</button>
+    <!-- Password Protection Screen -->
+    <div id="password-screen">
+        <h2>Website Access</h2>
+        <p>Kuinka monta kalalajia on suomessa:</p>
+        <label for="password">Mikä on oikea vastaus kysymykseen?</label>
+        <input type="password" id="password" />
+        <button id="submit-password">Submit</button>
+    </div>
 
-<img src="assets/pictures/lohi.jpg" alt="lohi kuva">
-<p>
-Aloitin kalastamisen jo 2 vuoden ikäisenä ja harrastusta on jatkunut tähänpäivään asti.<br> 
-Kalastaminen on monipuolinen ja mieltärauhoittava harrastus jossa pääsee lähelle luontoa.
+    <!-- Website Content (initially hidden) -->
+    <div id="website-content" style="display: none;">
+        <header style="background-color: #4f606b; color: #fff; padding: 20px;">
+            <h1>Mun harrastus</h1>
+        </header>
+        <p>Tällä sivulla kerron mun harrastuksesta!</p>  
+        <ul>
+            <button id="goToEnd">Sivun loppuun</button>
+        </ul>
+        <hr>
+       
+        <article>
+            <img src="assets/pictures/lohi.jpg" alt="lohi kuva">
+            <p>
+                Aloitin kalastamisen jo 2 vuoden ikäisenä ja harrastusta on jatkunut tähänpäivään asti. Harrastukseni alkoi kun isä ja isoisäni veivät minua ja veljeäni kalastamaan kodin läheisille lammille ja jokille. Kaiken mitä tiedän kalastuksesta nyt, niin opin heiltä.<br> 
+                Kalastaminen on monipuolinen ja mieltärauhoittava harrastus jossa pääsee lähelle luontoa.
+            </p>
+            <img src="assets/pictures/ahvenn.jpg" alt="ahven kuva">
+            <p>Kalastus tarjoaa monia hyviä asioita niin harrastajille kuin ympäristöllekin. Ensinnäkin se edistää rentoutumista ja stressin lievittämistä.
+                Kun istut rauhallisella järven rannalla tai melot virtaavassa joessa, arjen huolet unohtuvat hetkeksi. Kalastus myös yhdistää ihmisiä. 
+                Se voi olla perheen yhteinen harrastus, joka vahvistaa siteitä sukupolvien välillä, tai se voi toimia sosiaalisena tapahtumana ystävien kesken.
+                Kalareissulla ja saaliin jakamisella on aina paikkansa tarinoissa ja naurussa. Toisaalta kalastus on myös luontoa kunnioittavaa, kunhan sitä
+                tehdään vastuullisesti. Kalastusrajoitukset ja pyyntimitat auttavat ylläpitämään kalakantoja. Lisäksi kalastaminen kannustaa ympäristötietoisuuteen
+                ja huolehtimaan vesistöjen puhtaudesta. Kaiken kaikkiaan kalastus on harrastus, joka tuo iloa, 
+                yhteyksiä ja ekologista vastuullisuutta yhteen pakettiin.
+            </p>
+            <h3>Eri kalalajit mitä olen saanut</h3>
+            <ul>
+                <li>Ahven</li>
+                <li>Hauki</li>
+                <li>Harjus</li>
+                <li>Säyne</li>
+                <li>Särki</li>
+                <li>Järvilohi</li>
+                <li>Taimen</li>
+                <li>Kirjolohi</li>
+                <li>Siika</li>
+                <li>Turska</li>
+                <li>Seiti</li>
+                <li>Karppi</li>
+                <li>Kiiski</li>
 
-</ul>
-<img src="assets/pictures/ahvenn.jpg" alt="ahven kuva">
-<p>Kalastus tarjoaa monia hyviä asioita niin harrastajille kuin ympäristöllekin. Ensinnäkin se edistää rentoutumista ja stressin lievittämistä.
-    Kun istut rauhallisella järven rannalla tai melot virtaavassa joessa, arjen huolet unohtuvat hetkeksi. Kalastus myös yhdistää ihmisiä. 
-    Se voi olla perheen yhteinen harrastus, joka vahvistaa siteitä sukupolvien välillä, tai se voi toimia sosiaalisena tapahtumana ystävien kesken.
-     Kalareissulla ja saaliin jakamisella on aina paikkansa tarinoissa ja naurussa. Toisaalta kalastus on myös luontoa kunnioittavaa, kunhan sitä
-      tehdään vastuullisesti. Kalastusrajoitukset ja pyyntimitat auttavat ylläpitämään kalakantoja. Lisäksi kalastaminen kannustaa ympäristötietoisuuteen
-       ja huolehtimaan vesistöjen puhtaudesta. Kaiken kaikkiaan kalastus on harrastus, joka tuo iloa, 
-       yhteyksiä ja ekologista vastuullisuutta yhteen pakettiin.</p>
-       <br><br><br><br><br><br><br><br><br> 
-  
-</article>
-<aside>
-    <img src="assets/pictures/Harjus.jpg" alt="kala kuva">
-</p>  
-<h2>Pros and cons</h2>
-<p>Pros</p>
-<ul>
-    <li>Kalastaminen on mieltärauhoittavaa ja jopa terapeuttista tekemistä kaiken ikäisille</li>
-    <li>Harrastuksella voi saada ruuan pöytään maksamatta mitään</li>
-    <li>Uusien paikkojen ja maisemien näkeminen</li>
-    <li>Tylsyyttävästä arjesta irtautuminen</li>
-    <li>Sinivalosta erkaantuminen</li>
-    <li>Uusien uskomattomien muistojen syntyminen</li>
-</ul>
-<p>Cons</p>
-<ul>
-    <li>Uistimien pohjaan jääminen</li>
-    <li>Suuren kalan päästyä karkuun tekee mieli pistää virveli palasiksi</li>
-    <li>Kala syö parhaiten paskalla säällä</li>
-    <li>Kalliit vermeet</li>
- 
-
-            <img src="assets/pictures/ahven.jpg" alt="kala kuva">
+            </ul>
+            <br><br><br><br><br><br><br><br><br> 
+        </article>
+        <aside>
+            <img src="assets/pictures/Harjus.jpg" alt="kala kuva">
+            <h2>Pros and cons</h2>
+            <p>Pros</p>
+            <ul>
+                <li>Kalastaminen on mieltärauhoittavaa ja jopa terapeuttista tekemistä kaiken ikäisille</li>
+                <li>Harrastuksella voi saada ruuan pöytään maksamatta mitään</li>
+                <li>Uusien paikkojen ja maisemien näkeminen</li>
+                <li>Tylsyyttävästä arjesta irtautuminen</li>
+                <li>Sinivalosta erkaantuminen</li>
+                <li>Uusien uskomattomien muistojen syntyminen</li>
+            </ul>
+            <p>Cons</p>
+            <ul>
+                <li>Uistimien pohjaan jääminen</li>
+                <li>Suuren kalan päästyä karkuun tekee mieli pistää virveli palasiksi</li>
+                <li>Kala syö parhaiten paskalla säällä</li>
+                <li>Kalliit vermeet</li>
+                <img src="assets/pictures/ahvenv2.jpg" alt="kala kuva">
             <p4>
                 <br>Kalastuksesta kiinnnostuneille laitan linkin, klikkaa vain <a href="https://kuusamonuistin.fi/kalastuksen-kauneudesta/"target="_blank">tästä!</a>
                     </p4>
+                    <p4>
+                        <br>Linkki maailman parhaisiin kalavermeisiin löytyy <a href="https://kuusamonuistin.fi/"target="_blank">tästä!</a>
+                            </p4>
+                            <br><br><br><br><br><br>
+                    <button id="goToTop">Sivun alkuun</button>
 </aside>
-<button id="goToTop">Sivun alkuun</button>
 </body>
 </html>

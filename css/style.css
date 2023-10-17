@@ -17,8 +17,8 @@ article{
     float: left;
 }
 h1{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -41,4 +41,14 @@ aside{
     padding-right: auto;
     margin-right: auto;
     float: right;
+}
+#password-screen {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#website-content {
+    display: none;
 }
