@@ -44,9 +44,9 @@ aside{
 }
 #password-screen {
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 20px;
+    padding: 400px;
 }
 
 #website-content {
